@@ -7,11 +7,79 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/flipclock.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
 
     <title>Flip Clock</title>
 </head>
 <body>
-    
+    <div id="main-container">
+        <div class="flip-clock-container">
+            <div class="flip-clock flip-clock-h">
+                <div class="digit digit-left" data-digit-before="0" data-digit-after="1">
+                    <!-- before -->
+                    <div class="card" onclick="this.classList.toggle('flipped')">
+                        <div class="card-face card-face-front">0</div>
+                        <div class="card-face card-face-back">1</div>
+                    </div>
+                    <!-- after -->
+                </div>
+                <div class="digit digit-right" data-digit-before="0" data-digit-after="1">
+                    <!-- before -->
+                    <div class="card" onclick="this.classList.toggle('flipped')">
+                        <div class="card-face card-face-front">0</div>
+                        <div class="card-face card-face-back">1</div>
+                    </div>
+                    <!-- after -->
+                </div>
+            </div>
+
+            <div class="colon">:</div>
+
+            <div class="flip-clock flip-clock-m">
+                <div class="digit digit-left" data-digit-before="0" data-digit-after="1">
+                    <!-- before -->
+                    <div class="card" onclick="this.classList.toggle('flipped')">
+                        <div class="card-face card-face-front">0</div>
+                        <div class="card-face card-face-back">1</div>
+                    </div>
+                    <!-- after -->
+                </div>
+                <div class="digit digit-right" data-digit-before="0" data-digit-after="1">
+                    <!-- before -->
+                    <div class="card" onclick="this.classList.toggle('flipped')">
+                        <div class="card-face card-face-front">0</div>
+                        <div class="card-face card-face-back">1</div>
+                    </div>
+                    <!-- after -->
+                </div>
+            </div>
+
+            <div class="colon">:</div>
+
+            <div class="flip-clock flip-clock-s">
+                <div class="digit digit-left" data-digit-before="0" data-digit-after="1">
+                    <!-- before -->
+                    <div class="card" onclick="this.classList.toggle('flipped')">
+                        <div class="card-face card-face-front">0</div>
+                        <div class="card-face card-face-back">1</div>
+                    </div>
+                    <!-- after -->
+                </div>
+                <div class="digit digit-right" data-digit-before="0" data-digit-after="1">
+                    <!-- before -->
+                    <div class="card" onclick="this.classList.toggle('flipped')">
+                        <div class="card-face card-face-front">0</div>
+                        <div class="card-face card-face-back">1</div>
+                    </div>
+                    <!-- after -->
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
