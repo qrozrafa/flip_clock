@@ -26,7 +26,7 @@ body{
 #main-container{
     width: 100%;
     height: 100%;
-    background-color: teal;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +37,8 @@ body{
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 50px;
+    font-size: 125px;
+    font-weight: 900;
     line-height: 0;
 }
 
@@ -53,17 +54,16 @@ body{
 
 .digit{
     position: relative;
-    width: 45px;
-    height: 80px;
-    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+    width: 85px;
+    height: 170px;
 }
 
 .digit-left{
-    margin-right: 1px;
+    margin-right: -6px;
 }
 
 .digit-right{
-    margin-left: 1px;
+    margin-left: -6px;
 }
 
 .digit::before,
@@ -127,8 +127,8 @@ body{
 .digit::after,
 .card-face-front,
 .card-face-back{
-    background: white;
-    color: black;
+    background: black;
+    color: white;
 }
 
 .digit,
@@ -141,16 +141,16 @@ body{
 
 .digit::before,
 .card-face-back{
-    background: linear-gradient(0, #aaa, #ccc 50%, #fafafa);
-    color: #212121;
+    background: rgb(19, 19, 19);
+    color: rgb(167, 167, 167);
     border-top: 1px solid black;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
 .digit::after,
 .card-face-front{
-    background: linear-gradient(0, #aaa, #bbbbbb 50%, #f5f5f5);
-    color: #212121;
+    background: rgb(19, 19, 19);
+    color: rgb(167, 167, 167);
     border-bottom: 1px solid black;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -174,7 +174,6 @@ body{
 }
 
 .colon{
-    color: black;
-    margin: 0 6px;
+    margin: 0 3px;
     padding-bottom: 9px;
 }

@@ -44,14 +44,11 @@
         };
         now.h = now.h < 10 ? `0${now.h}` : `${now.h}`;
         now.m = now.m < 10 ? `0${now.m}` : `${now.m}`;
-        now.s = now.s < 10 ? `0${now.s}` : `${now.s}`;
         now.h0 = now.h[0];
         now.h1 = now.h[1];
         now.m0 = now.m[0];
         now.m1 = now.m[1];
-        now.s0 = now.s[0];
-        now.s1 = now.s[1];
-        console.log(`${now.h0}${now.h1}:${now.m0}${now.m1}:${now.s0}${now.s1}`);
+
 
         for (const t of Object.keys(els)) {
             for (const i of ['0', '1']) {
@@ -62,10 +59,6 @@
                     if(i === '1') next = next < 4 ? `${next}` : '0';
                 }
                 if(t === 'm'){
-                    if(i === '0') next = next < 6 ? `${next}` : '0';
-                    if(i === '1') next = next < 10 ? `${next}` : '0';
-                }
-                if(t === 's'){
                     if(i === '0') next = next < 6 ? `${next}` : '0';
                     if(i === '1') next = next < 10 ? `${next}` : '0';
                 }
